@@ -7,16 +7,12 @@ const Index: React.FC = () => {
   const [showConfetti, setShowConfetti] = useState(false);
 
   useEffect(() => {
-    // Slight delay before showing confetti for better visual effect
-    const timer = setTimeout(() => {
-      setShowConfetti(true);
-    }, 500);
-
-    return () => clearTimeout(timer);
+    // Show confetti immediately
+    setShowConfetti(true);
   }, []);
 
   return (
-    <div className="min-h-screen w-full flex items-center justify-center bg-gradient-to-b from-white to-gray-50">
+    <div className="min-h-screen w-full flex items-center justify-center bg-charcoal grid-bg">
       {showConfetti && <Confetti />}
       <Hero />
     </div>

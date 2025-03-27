@@ -57,6 +57,10 @@ export default {
 					DEFAULT: '#111111',
 					light: '#333333',
 					accent: '#47B5FF'
+				},
+				charcoal: '#1a1a1a',
+				green: {
+					400: '#4ADE80'
 				}
 			},
 			borderRadius: {

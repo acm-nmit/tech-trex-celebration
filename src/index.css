@@ -82,4 +82,11 @@
     will-change: transform;
     z-index: 30;
   }
+
+  .grid-bg {
+    background-color: #1a1a1a;
+    background-image: linear-gradient(rgba(0, 255, 0, 0.05) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(0, 255, 0, 0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
 }

@@ -10,7 +10,7 @@ interface ConfettiPiece {
   rotation: number;
 }
 
-const colors = ['#47B5FF', '#111111', '#06283D', '#256D85'];
+const colors = ['#4ADE80', '#FFFFFF', '#47B5FF', '#256D85'];
 const shapes = ['square', 'circle'];
 
 const Confetti: React.FC = () => {
@@ -19,13 +19,13 @@ const Confetti: React.FC = () => {
   useEffect(() => {
     const createPieces = () => {
       const newPieces: ConfettiPiece[] = [];
-      const count = Math.min(window.innerWidth / 10, 100); // Responsive piece count
+      const count = Math.min(window.innerWidth / 8, 150); // More pieces
       
       for (let i = 0; i < count; i++) {
         newPieces.push({
           id: i,
           x: Math.random() * 100, // Random horizontal position (%)
-          delay: Math.random() * 3, // Random delay for animation
+          delay: Math.random() * 2, // Reduced delay for faster appearance
           color: colors[Math.floor(Math.random() * colors.length)],
           size: Math.random() * 6 + 5, // Between 5px and 11px
           rotation: Math.random() * 360, // Random initial rotation
@@ -40,7 +40,7 @@ const Confetti: React.FC = () => {
     // Clean up confetti after animation completes
     const timer = setTimeout(() => {
       setPieces([]);
-    }, 8000);
+    }, 10000);
     
     return () => clearTimeout(timer);
   }, []);
