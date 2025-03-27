@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -86,6 +85,10 @@ export default {
 					'30%': { opacity: '0', transform: 'translateY(20px)' },
 					'100%': { opacity: '1', transform: 'translateY(0)' }
 				},
+				'reveal': {
+					'0%': { opacity: '0', filter: 'blur(15px)', transform: 'scale(0.8)' },
+					'100%': { opacity: '1', filter: 'blur(0)', transform: 'scale(1)' }
+				},
 				'confetti-fall': {
 					'0%': { transform: 'translateY(-100vh) rotate(0deg)', opacity: '1' },
 					'100%': { transform: 'translateY(100vh) rotate(360deg)', opacity: '0' }
@@ -96,6 +99,7 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 1.2s ease-out forwards',
 				'fade-in-delay': 'fade-in-delay 2s ease-out forwards',
+				'reveal': 'reveal 1.5s ease-out forwards',
 				'confetti-fall': 'confetti-fall 5s ease-out forwards'
 			}
 		}

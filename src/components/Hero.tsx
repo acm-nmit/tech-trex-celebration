@@ -4,7 +4,11 @@ import React from 'react';
 const Hero: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center max-w-4xl mx-auto px-6 md:px-0">
-      <h1 className="font-bold text-5xl md:text-7xl lg:text-8xl text-white tracking-tight">
+      <div className="mb-4 text-xl md:text-2xl text-gray-300 font-medium animate-fade-in-delay">
+        And the answer is...
+      </div>
+      
+      <h1 className="font-bold text-5xl md:text-7xl lg:text-8xl text-white tracking-tight animate-reveal">
         <span className="text-white">TECH</span>
         <span className="text-green-400">-TREX</span>
       </h1>

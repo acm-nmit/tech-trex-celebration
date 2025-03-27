@@ -1,19 +1,19 @@
 
 import React, { useEffect, useState } from 'react';
 import Hero from '../components/Hero';
-import Confetti from '../components/Confetti';
+import RevealAnimation from '../components/RevealAnimation';
 
 const Index: React.FC = () => {
-  const [showConfetti, setShowConfetti] = useState(false);
+  const [showReveal, setShowReveal] = useState(false);
 
   useEffect(() => {
-    // Show confetti immediately
-    setShowConfetti(true);
+    // Show reveal animation immediately
+    setShowReveal(true);
   }, []);
 
   return (
-    <div className="min-h-screen w-full flex items-center justify-center bg-charcoal grid-bg">
-      {showConfetti && <Confetti />}
+    <div className="min-h-screen w-full flex items-center justify-center bg-gray-800 reveal-grid">
+      {showReveal && <RevealAnimation />}
       <Hero />
     </div>
   );
