@@ -24,9 +24,37 @@ const Hero: React.FC = () => {
           </p>
         </div>
         
-        <p className="text-white text-xl md:text-2xl font-medium">
+        <p className="text-white text-xl md:text-2xl font-medium mb-6">
           April 4th, 2025
         </p>
+
+        {/* WhatsApp Registration Section */}
+        <div className="mt-4 flex flex-col items-center space-y-4">
+          <p className="text-white text-lg font-medium">
+            Join WhatsApp For Registration Details
+          </p>
+          
+          <img 
+            src="/lovable-uploads/d8c32eca-ab67-4ce2-b660-62dce1fddeae.png" 
+            alt="WhatsApp QR Code" 
+            className="w-48 h-48 md:w-64 md:h-64 bg-white p-2 rounded-md"
+          />
+          
+          <div className="flex items-center gap-3">
+            <div className="h-px w-10 bg-gray-500"></div>
+            <span className="text-white text-sm">OR</span>
+            <div className="h-px w-10 bg-gray-500"></div>
+          </div>
+          
+          <a 
+            href="https://chat.whatsapp.com/example" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-green-400 hover:text-green-300 text-lg font-medium transition-colors underline"
+          >
+            Click here to join WhatsApp
+          </a>
+        </div>
       </div>
     </div>
   );
