@@ -81,9 +81,10 @@
   }
 
   .reveal-grid {
-    background-color: #1a1a1a;
-    background-image: linear-gradient(rgba(74, 222, 128, 0.05) 1px, transparent 1px),
-                      linear-gradient(90deg, rgba(74, 222, 128, 0.05) 1px, transparent 1px);
+    background-color: #111111;
+    background-image: 
+      linear-gradient(to right, rgba(36, 36, 36, 0.1) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(36, 36, 36, 0.1) 1px, transparent 1px);
     background-size: 30px 30px;
   }
   
