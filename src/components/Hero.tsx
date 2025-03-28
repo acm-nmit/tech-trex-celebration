@@ -13,6 +13,10 @@ const Hero: React.FC = () => {
         <span className="text-green-400">-TREX</span>
       </h1>
       
+      <div className="mt-6 text-white text-lg md:text-xl font-medium animate-fade-in-delay">
+        Hosted by ACM Student Chapter
+      </div>
+      
       <div className="mt-10 flex flex-col items-center animate-fade-in-delay">
         <div className="px-4 py-1 rounded-full bg-green-400 bg-opacity-10 mb-3">
           <p className="text-green-400 font-medium text-sm">
