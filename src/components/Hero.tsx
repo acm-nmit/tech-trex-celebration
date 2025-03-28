@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
           </div>
           
           <a 
-            href="https://chat.whatsapp.com/example" 
+            href="https://chat.whatsapp.com/CxuYDfMH5BUHhXuDFflmYl" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="text-green-400 hover:text-green-300 text-lg font-medium transition-colors underline"
